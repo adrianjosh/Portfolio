@@ -92,6 +92,7 @@ body {
     width: 400px;
     height: auto;
     border: 3px solid #FDFD96;
+    box-shadow: 20px 20px #FDFD96;
 }
 
 /* Blurred circles */
