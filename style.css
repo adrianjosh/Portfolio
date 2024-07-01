@@ -47,7 +47,7 @@ body {
 }
 
 .Introduction-container {
-    height: 90vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     gap: 150px;
@@ -57,7 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 2;
-    height: 50%;
+    height: 40%;
     color: aliceblue;
 }
 
@@ -120,9 +120,33 @@ body {
     z-index: 0;
     filter: blur(150px);
 }
+
 .Introduction-container::after {
     width: 150px;
     height: 150px;
     bottom: -50px;
     right: -100px;
+}
+
+.Skills-container {
+    color: aliceblue;
+}
+
+.Skills-container h2 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+.Skills-content-container h3{
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 5rem 0 2rem 0 ;
+}
+
+.Languages-container img {
+    width: 100px;
+    height: auto;
+    margin-right: 7rem;
 }
