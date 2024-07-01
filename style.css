@@ -89,19 +89,18 @@ body {
 
 .Picture-container img{
     display: block;
-    width: 400px;
+    width: 350px;
     height: auto;
     border: 3px solid #FDFD96;
     box-shadow: 20px 20px #FDFD96;
 }
 
 /* Blurred circles */
-.Introduction-container::before,
-.Introduction-container::after {
+.Introduction-container::before {
     content: '';
     position:fixed;
     border-radius: 50%;
-    background: rgba(118, 166, 255, 0.37);
+    background: rgba(82, 143, 255, 0.37);
     z-index: 0;
     filter: blur(150px);
 }
@@ -114,8 +113,16 @@ body {
 }
 
 .Introduction-container::after {
-    width: 300px;
-    height: 300px;
+    content: '';
+    position:fixed;
+    border-radius: 50%;
+    background: #FDFD96;
+    z-index: 0;
+    filter: blur(150px);
+}
+.Introduction-container::after {
+    width: 150px;
+    height: 150px;
     bottom: -50px;
     right: -100px;
 }
