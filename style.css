@@ -46,6 +46,16 @@ body {
     gap: 6rem;
 }
 
+.Navbar-right-list li {
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.Navbar-right-list li:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #FDFD96, 0 0 82px #FDFD96,0 0 92px #FDFD96;
+}
+
+
+
 .Introduction-container {
     min-height: 95vh;
     display: flex;
@@ -93,6 +103,32 @@ body {
     height: auto;
     border: 3px solid #FDFD96;
     box-shadow: 20px 20px #FDFD96;
+}
+
+.animated-button {
+    margin-top: 1rem;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: #FDFD96;
+    background-color: #111721;
+    border: 3px solid #FDFD96;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.animated-button:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 8px 8px #FDFD96;
+}
+
+.animated-button .iconify {
+    width: 24px;
+    height: 24px;
+    margin-bottom: -1px;
+    margin-right: 1rem;
 }
 
 /* Blurred circles */
@@ -207,7 +243,7 @@ body {
     text-align: center;
     font-weight: normal;
     color: aliceblue;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
 .Navbar-footer-list {
@@ -216,9 +252,5 @@ body {
     gap: 100px;
     justify-content: center;
     margin: 4rem 0;
-    color: #FDFD96;
-}
-
-.Navbar-footer-list a{
-    color: #FDFD96;
+    cursor: pointer;
 }
