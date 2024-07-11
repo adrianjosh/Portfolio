@@ -192,8 +192,8 @@ body {
     margin-top: 10rem;
 }
 
-.Projects-container * {
-    margin-bottom: 3rem;
+.Projects-container > div > div {
+    margin: 5rem 0;
 }
 
 .Projects-container h2{
@@ -205,6 +205,7 @@ body {
 .Projects-content {
     display: flex;
     gap: 50px;
+    
 }
 
 .Projects-image-container {
@@ -296,6 +297,10 @@ body {
     .Projects-content {
         flex-direction: column;
         gap: 0px;
+    }
+
+    .Projects-content > div {
+        width: 100%;
     }
 
     .Navbar-footer-list {
