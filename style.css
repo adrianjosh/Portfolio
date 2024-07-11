@@ -226,7 +226,7 @@ body {
 .Projects-content-description h3{
     font-weight: normal;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .Projects-content-description p{
@@ -303,6 +303,14 @@ body {
     .Projects-content-description {
         align-items: center;
         margin-top: 30px;
+    }
+
+    .Projects-content-description h3{
+        font-size: 2.5rem;
+    }
+    
+    .Projects-content-description p{
+        font-size: 1.2rem;
     }
 
     .Navbar-footer-list {
