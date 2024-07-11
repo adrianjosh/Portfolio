@@ -4,6 +4,7 @@
     padding: 0;
     font-family: Quicksand,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 html { scroll-behavior: smooth; }
 
 a {
@@ -55,8 +56,6 @@ body {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #FDFD96, 0 0 82px #FDFD96,0 0 92px #FDFD96;
 }
 
-
-
 .Introduction-container {
     min-height: 95vh;
     display: flex;
@@ -76,19 +75,19 @@ body {
     color: #9eb0c6;
 }
 .intro-hello, .intro-name {
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0;
     line-height: 1.5;
 }
 
 .Introduction h2 {
-    font-size: 2em;
+    font-size: 2rem;
     color: #FDFD96;
     line-height: 1.5;
 }
 
 .intro-p{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
@@ -128,7 +127,7 @@ body {
 .animated-button .iconify {
     width: 24px;
     height: 24px;
-    margin-bottom: -1px;
+    margin-bottom: 1px;
     margin-right: 1rem;
 }
 
@@ -255,3 +254,56 @@ body {
     margin: 4rem 0;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 920px) {
+    .Navbar-left {
+        font-size: 1.2rem;
+    }
+
+    .Navbar-right {
+        display: none;
+    }
+
+    .intro-hello {
+        color: #9eb0c6;
+    }
+
+    .intro-hello, .intro-name {
+        font-size: 2rem;
+    }
+    
+    .Introduction h2 {
+        font-size: 2rem;
+    }
+    
+    .intro-p{
+        font-size: 1.2rem;
+    }
+
+    .Introduction{
+    }
+
+    .Introduction-container {
+        flex-direction: column;
+        margin: 50px 0 100px 0;
+        min-height: 50vh;
+    }
+
+    .Picture-container img{
+        width: 300px;
+    }
+
+    .Projects-content {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .Navbar-footer-list {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .Navbar-footer-list button {
+        width: 180px;
+    }
+  }
