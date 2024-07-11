@@ -236,7 +236,6 @@ body {
 .Contact-container {
     text-align: center;
     color: aliceblue;
-    margin: 4rem 0;
 }
 
 .Contact-container h2{
@@ -253,7 +252,6 @@ body {
     gap: 100px;
     justify-content: center;
     margin: 4rem 0;
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 920px) {
@@ -332,5 +330,17 @@ body {
 
     .Navbar-footer-list button {
         width: 180px;
+    }
+    .Skills-container h2{
+        font-size: 4rem;
+    }
+
+    .Projects-container h2, .Contact-container h2
+    {
+        font-size: 3rem;
+    }
+    .Navbar-footer-list {
+        font-size: 1rem;
+        margin: 2rem 0 1rem 0;
     }
   }
