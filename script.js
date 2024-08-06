@@ -5,3 +5,16 @@ history.scrollRestoration = "manual";
       window.history.replaceState({}, "", window.location.href.split("#")[0]);
     }, 100);
   };
+
+//Hide and Show Desktop Header
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("hide-header").style.top = "0";
+  } else {
+    document.getElementById("hide-header").style.top = "-80px"; /* adjust this value to the height of your header */
+  }
+  prevScrollpos = currentScrollPos;
+  
+}
