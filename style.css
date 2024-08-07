@@ -41,7 +41,7 @@ body {
 }
 
 #hide-header {
-	transition: all .4s ease!important;
+	transition: all .2s ease!important;
 }
 
 .Navbar-left {

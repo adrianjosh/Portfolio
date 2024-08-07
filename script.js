@@ -13,7 +13,7 @@ var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("hide-header").style.top = "0";
   } else {
-    document.getElementById("hide-header").style.top = "-80px"; /* adjust this value to the height of your header */
+    document.getElementById("hide-header").style.top = "-90px"; /* adjust this value to the height of your header */
   }
   prevScrollpos = currentScrollPos;
   
