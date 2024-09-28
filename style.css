@@ -243,6 +243,10 @@ body {
     font-size: 1.5em;
 }
 
+.Projects-content-description button {
+    max-width: 130px;
+}
+
 .Contact-container {
     text-align: center;
     color: aliceblue;
