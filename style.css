@@ -29,9 +29,8 @@ body {
 
 .Navbar-container {
     display: flex;
-    padding: 0 5vw 1.5rem 5vw;
+    padding: 1rem 5vw;
     justify-content: space-between;
-    padding-top: 1em;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -47,6 +46,7 @@ body {
 .Navbar-left {
     font-size: 1.5rem;
     color: aliceblue;
+    align-content: center;
 }
 
 .Navbar-right{
@@ -65,6 +65,71 @@ body {
 
 .Navbar-right-list li:hover {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #FDFD96, 0 0 82px #FDFD96,0 0 92px #FDFD96;
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color:  rgb(34, 37, 49);
+    height: 100vh;
+    width: 100%;
+    max-width: 460px;
+    position: fixed;
+    top: 0;
+    right: -460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+/* nav */
+.nav {
+    display: none;
+}
+
+/* ham menu */
+.ham-menu {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .Introduction-container {
@@ -364,6 +429,10 @@ body {
 
     .Navbar-right {
         display: none;
+    }
+
+    .nav {
+        display: flex;
     }
 
     .intro-hello {
