@@ -34,7 +34,7 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: rgb(13, 16, 23);
     box-shadow: 0 6px 6px -2px rgba(0, 0, 0, 0.2);
 }
@@ -214,10 +214,8 @@ body {
     border-radius: 50%;
     background: rgba(82, 143, 255, 0.37);
     filter: blur(150px);
-    z-index: 1;
-}
-
-.Introduction-container::before {
+    z-index: 2;
+    pointer-events: none;
     width: 400px;
     height: 400px;
     top: -100px;
@@ -230,9 +228,7 @@ body {
     border-radius: 50%;
     background: #FDFD96;
     filter: blur(150px);
-}
-
-.Introduction-container::after {
+    pointer-events: none;
     width: 150px;
     height: 150px;
     bottom: -50px;
